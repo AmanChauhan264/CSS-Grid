@@ -1,0 +1,26 @@
+.item{
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+.grid-container{
+    display: grid;
+
+    /* gtc and gtr using fraction(fr)  */
+
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: repeat(3, 1fr); does the same thing as the above  */
+    grid-template-rows: 100px 200px;
+    gap: 2px;
+}
+.item1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.item2{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.item6{
+    grid-column: 2/4;
+}
